@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Date - Moderne & Réaliste</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="weather-canvas">
+        <div id="weather-particles"></div>
+    </div>
+    <header>
+        <h1><i class="fas fa-cloud-moon"></i> Météo Date</h1>
+    </header>
+    
+    <main class="dashboard">
+        <section id="weather" class="weather-panel">
+            <div class="search-bar">
+                <input type="text" id="city" placeholder="Entrez une ville">
+                <button onclick="getWeather()"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="message-box"></div> <!-- Conteneur pour messages -->
+            <div id="weather-info" class="weather-data"></div>
+        </section>
+        
+        <section id="ideas" class="ideas-panel">
+            <h2><i class="fas fa-bolt"></i> Idées de Sortie</h2>
+            <ul id="suggestions" class="suggestions-grid"></ul>
+            <button onclick="randomIdea()" class="action-btn"><i class="fas fa-random"></i> Aléatoire</button>
+        </section>
+        
+        <aside class="controls">
+            <section id="filters">
+                <h3><i class="fas fa-wallet"></i> Budget</h3>
+                <select id="budget" onchange="filterByBudget()">
+                    <option value="all">Tous</option>
+                    <option value="free">Gratuit</option>
+                    <option value="low">Petit</option>
+                    <option value="high">Élevé</option>
+                </select>
+            </section>
+            <section id="share">
+                <h3><i class="fab fa-twitter"></i> Partager</h3>
+                <button onclick="shareIdea()" class="share-btn">Tweeter</button>
+            </section>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>© 2025 - Météo Date | Design Réaliste</p>
+    </footer>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
