@@ -1,7 +1,5 @@
 # Météo Date
 
-![Météo Date Screenshot](screenshot.png) <!-- Remplacez par une capture d'écran réelle si possible -->
-
 **Météo Date** est une application web interactive qui fournit des prévisions météorologiques en temps réel pour n'importe quelle ville dans le monde, grâce à l'API OpenWeatherMap. Elle affiche non seulement la température et les conditions météorologiques, mais aussi l'heure locale de la ville, accompagnée d'effets visuels dynamiques et de suggestions d'activités adaptées au temps.
 
 ## Fonctionnalités
